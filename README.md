@@ -165,4 +165,4 @@ Os endereços IP das interfaces dos Hosts e Roteadores devem ser atribuídos da 
  * Entrega 3 – Topologia Funcionando em Equipamentos Reais
     * Tarefa 6: 3 pontos
     * Obs: somente será avaliado se a Entrega 2 tiver sido feita;
-* Teste de autoria: não vale nota, porém, é critério para validar a autoria do trabalho.
+* Teste de autoria: não vale nota, porém, é critério para validar a autoria do trabalho. 
