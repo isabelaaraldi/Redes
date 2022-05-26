@@ -48,7 +48,33 @@ Nome:                                                       RA:
 | Roteador-Coronel      | Fa0/1     |      |                |                |              |                |
 
 ## Tarefa 3: Tabela de Roteamento
+### Roteador Pato Branco
+#### IPv4
+| Rede de Destino | Máscara | Next Hop | Interface de Saída |
+|-----------------|---------|----------|--------------------|
+|                 |         |          |                    |
+|                 |         |          |                    |
+|                 |         |          |                    |
+#### IPv6
+| Rede de Destino/Prefixo | Next Hop | Interface de Saída |
+|-----------------|----------|--------------------|
+|                 |          |                    |
+|                 |          |                    |
+|                 |          |                    |
+
 
 ## Topologia - Packet Tracer
+- [ ] ![Trabalho2-Topologia-NomeAluno](trabalho2-topologia-NomeAluno.pkt)
+
 
 ## Arquivos de Configuração dos Dispositivos Intermediários (roteadores e switches)
+- [ ] ![Roteador Pato Branco](r-pb-nnn.pkt)
+- [ ] ![Roteador Francisco Beltrão](r-fb-nnn.pkt)
+- [ ] ![Roteador Vitorino](r-vit-nnn.pkt)
+- [ ] ![Roteador Itapejara D'Oeste](r-ita-nnn.pkt)
+- [ ] ![Roteador Coronel Vivida](r-cv-nnn.pkt)
+- [ ] ![Switch Pato Branco](s-pb-nnn.pkt)
+- [ ] ![Switch Francisco Beltrão](s-fb-nnn.pkt)
+- [ ] ![Switch Coronel Vivida](s-cv-nnn.pkt)
+
+

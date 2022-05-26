@@ -132,7 +132,7 @@ Os endereços IP das interfaces dos Hosts e Roteadores devem ser atribuídos da 
         * Não será aceita entrega após o prazo;
         * Obs: no dia 31/05/2022 às 18h40min será disponibilizado o gabarito para conferência e ajustes caso necessário;
 * Entrega 2 – Disponibilizar no repositório criado:
-	 * arquivo em formato .pkt (Packet Tracer), nomeado como Trabalho2-Topologia-NomeAluno.pkt com a topologia configurada e funcionando no Packet Tracer (Tarefas 4 e 5).
+	 * arquivo em formato .pkt (Packet Tracer), nomeado como trabalho2-topologia-NomeAluno.pkt com a topologia configurada e funcionando no Packet Tracer (Tarefas 4 e 5).
 	 	 * Data da entrega: até *02/06/2022* às 8h20min;
 	 	 * Obs: será aceita entrega após o prazo, porém com desconto de 25% por dia de atraso!  
 	 * Atualizar documentação (Entrega 1), corrigida, se for o caso;
