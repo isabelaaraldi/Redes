@@ -1,7 +1,9 @@
 # Trabalho 2: Integração de habilidades - 2022/1
-Disciplina: Redes de Computadores
-Curso: Engenharia de Computação / Elétrica
-Nome:                                                       RA:
+**Disciplina: Redes de Computadores**
+
+**Curso: Engenharia de Computação / Elétrica**
+
+**Nome/RA:**
 
 
 ## Tarefa 1:  Sub-Redes
@@ -23,29 +25,29 @@ Nome:                                                       RA:
 ## Tarefa 2: Endereçamento de Dispositivos
 | Dispositivo           | Interface | IPv4 | IPv4 - Máscara | IPv4 - Gateway | IPv6/Prefixo | IPv6 - Gateway |
 |-----------------------|-----------|------|----------------|----------------|--------------|----------------|
-| PC1                   | NIC       |      |                |                |              |                |
-| PC2                   | NIC       |      |                |                |              |                |
-| PC3                   | NIC       |      |                |                |              |                |
-| PC4                   | NIC       |      |                |                |              |                |
-| PC5                   | NIC       |      |                |                |              |                |
-| PC6                   | NIC       |      |                |                |              |                |
-| Switch-Matriz         | SVI       |      |                |                |              |                |
-| Switch-Filial1        | SVI       |      |                |                |              |                |
-| Switch-Filial2        | SVI       |      |                |                |              |                |
-| Roteador-Pato Branco  | Fa0/0     |      |                |                |              |                |
-| Roteador-Pato Branco  | Se0/0/0   |      |                |                |              |                |
-| Roteador-Pato Branco  | Se0/0/1   |      |                |                |              |                |
+| PC1 | NIC    |      |           |             |              |                |
+| PC2 | NIC    |      |           |             |              |                |
+| PC3 | NIC    |      |           |             |              |                |
+| PC4 | NIC    |      |           |             |              |                |
+| PC5 | NIC    |      |           |             |              |                |
+| PC6 | NIC    |      |           |             |              |                |
+| Switch-Matriz | SVI    |      |           |                |              |                |
+| Switch-Filial1 | SVI    |      |          |                |              |                |
+| Switch-Filial2 | SVI    |      |                |                |              |                |
+| Roteador-Pato Branco  | Fa0/0 |      |                |                |              |                |
+| Roteador-Pato Branco  | Se0/0/0 |      |                |                |              |                |
+| Roteador-Pato Branco  | Se0/0/1 |      |                |                |              |                |
 | Roteador-Fco. Beltrão | Fa0/0     |      |                |                |              |                |
-| Roteador-Fco. Beltrão | Se0/0/0   |      |                |                |              |                |
-| Roteador-Fco. Beltrão | Se0/0/1   |      |                |                |              |                |
-| Roteador-Vitorino     | Se0/0/0   |      |                |                |              |                |
-| Roteador-Vitorino     | Se0/0/1   |      |                |                |              |                |
-| Roteador-Itapejara    | Se0/0/0   |      |                |                |              |                |
-| Roteador-Itapejara    | Se0/0/1   |      |                |                |              |                |
-| Roteador-Itapejara    | Fa0/1     |      |                |                |              |                |
-| Roteador-Coronel      | Fa0/0     |      |                |                |              |                |
-| Roteador-Coronel      | Se0/0/1   |      |                |                |              |                |
-| Roteador-Coronel      | Fa0/1     |      |                |                |              |                |
+| Roteador-Fco. Beltrão | Se0/0/0        |                |                |              |                |
+| Roteador-Fco. Beltrão | Se0/0/1 |      |                |                |              |                |
+| Roteador-Vitorino     | Se0/0/0 |      |                |                |              |                |
+| Roteador-Vitorino     | Se0/0/1 |      |                |                |              |                |
+| Roteador-Itapejara    | Se0/0/0 |      |                |                |              |                |
+| Roteador-Itapejara    | Se0/0/1 |      |                |                |              |                |
+| Roteador-Itapejara    | Fa0/1   |      |                |                |              |                |
+| Roteador-Coronel      | Fa0/0   |      |                |                |              |                |
+| Roteador-Coronel      | Se0/0/1 |      |                |                |              |                |
+| Roteador-Coronel      | Fa0/1  |      |                |                |              |                |
 
 ## Tarefa 3: Tabela de Roteamento
 ### Roteador Pato Branco
