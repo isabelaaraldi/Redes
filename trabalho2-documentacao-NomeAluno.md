@@ -25,3 +25,6 @@ Nome:                                                       RA:
 
 ## Tarefa 3: Tabela de Roteamento
 
+## Topologia - Packet Tracer
+
+## Arquivos de Configuração dos Dispositivos Intermediários (roteadores e switches)

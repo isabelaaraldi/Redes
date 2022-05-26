@@ -36,7 +36,7 @@ Utilize o bloco de endereço IPv4 200.200.**N**.0/24 e IPv6 2001:DB8:ACAD:**NN**
 * Reserve a **quarta** e **quinta** sub-redes para novas filiais da empresa; 
 * No IPv4, utilize a **última sub-rede /27** disponível para criar sub-redes /30 para endereçar os enlaces entre os roteadores (pb-vit, vit-fb, fb-ita, ita-pb, ita-cv e as novas filiais);
 * No IPv6, utilize a **última sub-rede /64** disponível para criar sub-redes /112 para endereçar os enlaces entre os roteadores (pb-vit, vit-fb, fb-ita, ita-pb, ita-cv e as novas filiais). Utilize o algoritmo Righmost (RFC 3531), para criar as sub-redes. Sugestão: usar o simulador disponível em [http://ipv6.br/paginas/old_subnet](http://ipv6.br/paginas/old_subnet).
-* Documente as sub-redes no conforme [modelo disponível](trabalho2-documentacao-NomeAluno.md).
+* Documente as sub-redes conforme [modelo](trabalho2-documentacao-NomeAluno.md).
     * Sugere-se que você insira as informações de sub-rede também na topologia (PacketTracer), para ficar mais fácil a visualização.
 
 ## Tarefa 2: Documentar a configuração da rede lógica dos dispositivos
@@ -54,15 +54,18 @@ Os endereços IP das interfaces dos Hosts e Roteadores devem ser atribuídos da 
 * Atribuir  à interface Se0/0/0 de cada roteador o **primeiro** endereço de host válido da sub-rede de ligação entre os roteadores. 
     * Esta interface será o **DCE**, com clock rate de **56000**.
 * Atribuir à interface Se0/0/1 de cada roteador o **segundo** endereço de host válido da sub-rede de ligação entre os roteadores.
+* Atribuir à interface Fa0/1 do roteador Itapejara o **primeiro** endereço de host válido da sub-rede de ligação entre os roteadores.
+* Atribuir à interface Fa0/1 do roteador Coronel Vivida o **segundo** endereço de host válido da sub-rede de ligação entre os roteadores.
 * Para IPv6, também deve-se especificar os endereços de link-local para as conexões, sendo:
     * nos computadores deve-se usar **EUI-64** para atribuição do endereço de **link-local**.
     * as ligações (WAN) entre roteadores deve se usar **EUI-64** para atribuição do endereço de **link-local**;
     * as ligações entre o roteador e as LANs deve ser especificar manualmente os endereços usando o endereço **FE80::1**, isto é, todas as interfaces Fa0/0 terão o IPv6 de link-local igual **FE80::1**;
-* Documente o endereçamento para os dispositivos conforme modelo disponível no **Quadro 2 (Anexo)**.
+* Documente o endereçamento para os dispositivos conforme [modelo](trabalho2-documentacao-NomeAluno.md).
+
 
 ## Tarefa 3: Documentar as tabelas de roteamento
 * Definir as rotas em todos os roteadores de forma que os computadores da Matriz atinjam os computadores das filiais no **sentido horário**, isto é, através da rota “Pato Branco --> Vitorino --> Francisco Beltrão” e sejam respondidos pelo caminho oposto “Francisco Beltrão --> Itapejara D’Oeste --> Pato Branco”. O fluxo de ida é feito através de Vitorino e as respostas através de Itapejara D’Oeste.
-* Documentar as tabelas de roteamento para IPv4 e IPv6, conforme modelo disponível nos **Quadros 3 a 6**;
+* Documentar as tabelas de roteamento para IPv4 e IPv6, conforme modelo [modelo](trabalho2-documentacao-NomeAluno.md).
     * Não é obrigatório documentar as redes diretamente conectadas.
     
 ## Tarefa 4: Configuração básica dos dispositivos no Packet Tracer
@@ -117,34 +120,20 @@ Os endereços IP das interfaces dos Hosts e Roteadores devem ser atribuídos da 
 	 
 **Observação:** Todas as configurações nos roteadores devem ser feitas via CLI;
 
-## Tarefa 6: Replicar a topologia em ambiente real
- * A topologia criada no Packet Tracer deverá ser replicada nos equipamentos disponíveis no laboratório;
- 	 * Escolher o “**N**” de um dos membros da equipe para configurar todos os dispositivos;
- 	 * Realizar a configuração básica dos equipamentos (equivalente a Tarefa 4)
-      * Não é preciso a configuração das medidas básicas de segurança (equivalente a Tarefa 5).
- * Para essa etapa, deverá ser criado um grupo de até 4 alunos, em que cada aluno será responsável por configurar:
- 	 * Aluno 1: Dispositivos da Filial 1
- 	 * Aluno 2: Dispositivos da Filial 2
- 	 * Aluno 3: Dispositivos da Matriz
- 	 * Aluno 4: Roteadores Vitorino e Itapejara D’Oeste
- 	 * Todos alunos: conexão física dos equipamentos.
- * Eventualmente um grupo poderá ficar com até 5 alunos, caso seja necessário, para fechar os grupos.
- * Caso o grupo tenha meno de 4 alunos, um aluno deve assumir a configuração de outro aluno.
-
 ## Avaliação
 * As Tarefas 1 a 5 é individual, porém, poderá ser feita em grupo! 
 	 * No entanto, cada aluno deve fazer a sua atividade e ter total domínio do que foi feito.
 * Entrega 1 - Disponibilizar, no moodle link para repositorio git (gitlab ou github ou outro repositório), 
     * Disponibilizar no repositório arquivo  .md contendo:
     * RA e Nome do aluno;
-        * Quadros 1 a 6 preenchidos (Tarefas 1, 2 e 3);
+	* Documentação correspondente as Tarefas 1, 2 e 3;
         * Outras informações que achar relevante;
-    * Data da entrega: até 31/05/2022 às 18h40min;
+    * Data da entrega: até *31/05/2022* às 18h40min;
         * Não será aceita entrega após o prazo;
         * Obs: no dia 31/05/2022 às 18h40min será disponibilizado o gabarito para conferência e ajustes caso necessário;
 * Entrega 2 – Disponibilizar no repositório criado:
 	 * arquivo em formato .pkt (Packet Tracer), nomeado como Trabalho2-Topologia-NomeAluno.pkt com a topologia configurada e funcionando no Packet Tracer (Tarefas 4 e 5).
-	 	 * Data da entrega: até 02/06/2022 às 8h20min;
+	 	 * Data da entrega: até *02/06/2022* às 8h20min;
 	 	 * Obs: será aceita entrega após o prazo, porém com desconto de 25% por dia de atraso!  
 	 * Atualizar documentação (Entrega 1), corrigida, se for o caso;
 	 * arquivos contendo a configuração de cada dispositivo intermediário da topologia (roteadores e switches)
@@ -155,9 +144,8 @@ Os endereços IP das interfaces dos Hosts e Roteadores devem ser atribuídos da 
 * Entrega 1 – Documentação
     * Tarefa 1: 1 ponto
     * Tarefa 2: 1 ponto
-    * Tarefa 3: 2 ponto
+    * Tarefa 3: 2 pontos
 * Entrega 2 – Topologia Funcionando no Packet Tracer
     * Tarefa 4: 5 pontos
     * Tarefa 5: 1 ponto
-    * Obs: somente será avaliado se a Entrega 1 tiver sido feita;
 * Teste de autoria: não vale nota, porém, é critério para validar a autoria do trabalho. 
