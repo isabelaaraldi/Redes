@@ -36,7 +36,7 @@ Utilize o bloco de endereço IPv4 200.200.**N**.0/24 e IPv6 2001:DB8:ACAD:**NN**
 * Reserve a **quarta** e **quinta** sub-redes para novas filiais da empresa; 
 * No IPv4, utilize a **última sub-rede /27** disponível para criar sub-redes /30 para endereçar os enlaces entre os roteadores (pb-vit, vit-fb, fb-ita, ita-pb, ita-cv e as novas filiais);
 * No IPv6, utilize a **última sub-rede /64** disponível para criar sub-redes /112 para endereçar os enlaces entre os roteadores (pb-vit, vit-fb, fb-ita, ita-pb, ita-cv e as novas filiais). Utilize o algoritmo Righmost (RFC 3531), para criar as sub-redes. Sugestão: usar o simulador disponível em [http://ipv6.br/paginas/old_subnet](http://ipv6.br/paginas/old_subnet).
-* Documente as sub-redes conforme [modelo disponível](trabalho2-documentacao-NomeAluno.md).
+* Documente as sub-redes conforme [modelo](trabalho2-documentacao-NomeAluno.md).
     * Sugere-se que você insira as informações de sub-rede também na topologia (PacketTracer), para ficar mais fácil a visualização.
 
 ## Tarefa 2: Documentar a configuração da rede lógica dos dispositivos
@@ -90,7 +90,7 @@ Os endereços IP das interfaces dos Hosts e Roteadores devem ser atribuídos da 
     * Lembre-se de testar para IPv4 e para IPv6.
 
 ## Tarefa 5: Configuração de medidas básicas de segurança
- * Implementar as medidas básicas de seguranças nos roteadores (nos switches é opcional)
+ * Implementar as medidas básicas de seguranças nos **roteadores**
 	 * Exigir que as senhas tenham comprimento mínimo de 10 caracteres;
 	 * Impedir tentativas de login por ataque de força bruta de modo a bloquear tentativas de login por 120 segundos se houver 3 tentativas de login com falha dentro de 60 segundos;
 	 * Encerrar as conexões via console e VTY após 5 minutos de inatividade;
@@ -117,27 +117,13 @@ Os endereços IP das interfaces dos Hosts e Roteadores devem ser atribuídos da 
 	 
 **Observação:** Todas as configurações nos roteadores devem ser feitas via CLI;
 
-## Tarefa 6: Replicar a topologia em ambiente real
- * A topologia criada no Packet Tracer deverá ser replicada nos equipamentos disponíveis no laboratório;
- 	 * Escolher o “**N**” de um dos membros da equipe para configurar todos os dispositivos;
- 	 * Realizar a configuração básica dos equipamentos (equivalente a Tarefa 4)
-      * Não é preciso a configuração das medidas básicas de segurança (equivalente a Tarefa 5).
- * Para essa etapa, deverá ser criado um grupo de até 4 alunos, em que cada aluno será responsável por configurar:
- 	 * Aluno 1: Dispositivos da Filial 1
- 	 * Aluno 2: Dispositivos da Filial 2
- 	 * Aluno 3: Dispositivos da Matriz
- 	 * Aluno 4: Roteadores Vitorino e Itapejara D’Oeste
- 	 * Todos alunos: conexão física dos equipamentos.
- * Eventualmente um grupo poderá ficar com até 5 alunos, caso seja necessário, para fechar os grupos.
- * Caso o grupo tenha meno de 4 alunos, um aluno deve assumir a configuração de outro aluno.
-
 ## Avaliação
 * As Tarefas 1 a 5 é individual, porém, poderá ser feita em grupo! 
 	 * No entanto, cada aluno deve fazer a sua atividade e ter total domínio do que foi feito.
 * Entrega 1 - Disponibilizar, no moodle link para repositorio git (gitlab ou github ou outro repositório), 
-    * Disponibilizar no repositório arquivo  .md contendo:
-    * RA e Nome do aluno;
-        * Quadros 1 a 6 preenchidos (Tarefas 1, 2 e 3);
+    * Disponibilizar no repositório arquivo  .md conforme [modelo](trabalho2-documentacao-NomeAluno.md) contendo:
+    	* RA e Nome do aluno;
+        * Quadros com a documentação referente às tarefas 1, 2 e 3;
         * Outras informações que achar relevante;
     * Data da entrega: até 31/05/2022 às 18h40min;
         * Não será aceita entrega após o prazo;
@@ -145,11 +131,14 @@ Os endereços IP das interfaces dos Hosts e Roteadores devem ser atribuídos da 
 * Entrega 2 – Disponibilizar no repositório criado:
 	 * arquivo em formato .pkt (Packet Tracer), nomeado como Trabalho2-Topologia-NomeAluno.pkt com a topologia configurada e funcionando no Packet Tracer (Tarefas 4 e 5).
 	 	 * Data da entrega: até 02/06/2022 às 8h20min;
-	 	 * Obs: será aceita entrega após o prazo, porém com desconto de 25% por dia de atraso!  
-	 * Atualizar documentação (Entrega 1), corrigida, se for o caso;
-	 * arquivos contendo a configuração de cada dispositivo intermediário da topologia (roteadores e switches)
+	 	 * Obs: não será aceita entrega após o prazo!
+	* arquivos contendo a configuração de cada dispositivo intermediário da topologia (roteadores e switches)
 	    * o nome de cada arquivo deve ser o mesmo nome do dispositivo definido na Tarefa 4, acrescido da extensão .txt (ex: r-pb-ff.txt)
-            
+	 * Atualizar documentação (Entrega 1):
+	 	* com correções nos quadros, se for o caso;
+		* referencia para arquivo .pkt;
+		* referencia para arquivos com as configurações de cada dispositivo.
+           
           
 ## Critérios de Avaliação:
 * Entrega 1 – Documentação
