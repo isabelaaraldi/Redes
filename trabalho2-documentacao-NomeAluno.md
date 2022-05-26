@@ -1,6 +1,8 @@
 # Trabalho 2: Integração de habilidades - 2022/1
-Disciplina: Redes de Computadores
+**Disciplina: Redes de Computadores**
+
 Curso: Engenharia de Computação / Elétrica
+
 Nome:                                                       RA:
 
 
