@@ -75,8 +75,8 @@
 - [ ] ![Roteador Vitorino](r-vit-nnn.pkt)
 - [ ] ![Roteador Itapejara D'Oeste](r-ita-nnn.pkt)
 - [ ] ![Roteador Coronel Vivida](r-cv-nnn.pkt)
-- [ ] ![Switch Pato Branco](s-pb-nnn.pkt)
-- [ ] ![Switch Francisco Beltrão](s-fb-nnn.pkt)
-- [ ] ![Switch Coronel Vivida](s-cv-nnn.pkt)
+- [ ] ![Switch Pato Branco](sw-pb-nnn.pkt)
+- [ ] ![Switch Francisco Beltrão](sw-fb-nnn.pkt)
+- [ ] ![Switch Coronel Vivida](sw-cv-nnn.pkt)
 
 
