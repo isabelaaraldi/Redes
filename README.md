@@ -16,13 +16,16 @@ Este trabalho prático compreende a criação de uma topologia de rede simulando
 * Trabalho em equipe.
 
 ## Topologia
-Neste trabalho, você criará uma pequena topologia para interligação da Matriz de uma empresa localizada em Pato Branco e suas Filiais localizadas em Francisco Beltrão e Coronel Vivida.  A topologia a ser utilizada está apresentada na **Figura 1**.
+Neste trabalho, você criará uma pequena topologia para interligação da Matriz de uma empresa localizada em Pato Branco e suas Filiais localizadas em Francisco Beltrão e Coronel Vivida.  A topologia a ser utilizada está apresentada na [Figura 1](#figura1). 
+![figura1](topologia.png "Topologia do Trabalho 2")
+
+**Figura 1 - Topologia**
 
 
 
 ## Tarefa 1: Projetar e documentar as sub-redes
-Utilize o bloco de endereço **IPv4 200.200.N.0/24** e **IPv6 2001:DB8:ACAD:NN00::/56** para criar sub-redes de forma a atender os prefixos especificados na topologia, as demais especificações devem atender as seguintes demandas:
-* O número N e NN equivalem aos dois últimos números do seu RA, sendo que NN deve ser convertido para hexadecimal. Ex: se o seu número for 11, ficaria 200.200.11.0/24 e 2001:0DB8:ACAD:0B00::/56.
+Utilize o bloco de endereço IPv4 200.200.**N**.0/24 e IPv6 2001:DB8:ACAD:**NN**00::/56 para criar sub-redes de forma a atender os prefixos especificados na topologia, as demais especificações devem atender as seguintes demandas:
+* O número N e NN equivalem aos dois últimos números do seu RA, sendo que NN deve ser convertido para hexadecimal. Ex: se o seu número for **1**1, ficaria 200.200.**11**.0/24 e 2001:0DB8:ACAD:**0B**00::/56.
 * O prefixo IPv4 para a LAN da Matriz deve ser **/26** e para a Filial 1 deve ser **/27**;
     * Deve-se prever a expansão da empresa com três novas filiais (Filial 2, Filial 3, Filial 4), todas com o prefixo **/27**.
 * O prefixo IPv6 para as LANs, tanto da Matriz como das Filiais, deve ser **/64**;
@@ -33,7 +36,7 @@ Utilize o bloco de endereço **IPv4 200.200.N.0/24** e **IPv6 2001:DB8:ACAD:NN00
 * Reserve a **quarta** e **quinta** sub-redes para novas filiais da empresa; 
 * No IPv4, utilize a **última sub-rede /27** disponível para criar sub-redes /30 para endereçar os enlaces entre os roteadores (pb-vit, vit-fb, fb-ita, ita-pb, ita-cv e as novas filiais);
 * No IPv6, utilize a **última sub-rede /64** disponível para criar sub-redes /112 para endereçar os enlaces entre os roteadores (pb-vit, vit-fb, fb-ita, ita-pb, ita-cv e as novas filiais). Utilize o algoritmo Righmost (RFC 3531), para criar as sub-redes. Sugestão: usar o simulador disponível em [http://ipv6.br/paginas/old_subnet](http://ipv6.br/paginas/old_subnet).
-* Documente as sub-redes conforme modelo disponível no **Quadro 1 (anexo)**.
+* Documente as sub-redes no conforme [modelo disponível](trabalho2-documentacao-NomeAluno).
     * Sugere-se que você insira as informações de sub-rede também na topologia (PacketTracer), para ficar mais fácil a visualização.
 
 ## Tarefa 2: Documentar a configuração da rede lógica dos dispositivos
@@ -95,19 +98,23 @@ Os endereços IP das interfaces dos Hosts e Roteadores devem ser atribuídos da 
 	 * Proteger o acesso ao EXEC privilegiado com a senha secreta @dmin-nome, sendo nome, o seu primeiro nome.
 	 * Proteger o acesso via console com a senha @Cons-nome;
 	 * Configure um banner MOTD para informar sobre o acesso não autorizado, conforme exemplo:
+```	
 --------------------------------------------------------------------------
-|				 				                                         |
-|                          Roteador Pato Branco                          |  
-|				 				                                         |
+|                                                                        |
+|                          Roteador Pato Branco                          |
+|                                                                        |
 |               ATENÇÃO Acesso Restrito a pessoas autorizadas!           |
-|				 				                                         |
-|        Administrador: SEU NOME COMPLETO  (email@seuemail.com)          |
-|				 				                                         |
+|                                                                        |
+|          Administrador: SEU NOME COMPLETO (email@seuemail.com)         |
+|                                                                        |
 --------------------------------------------------------------------------
+```    
+
  * Permitir o acesso remoto (linhas VTY 0 15) ao dispositivo somente via SSH e com usuário local:
 	 * usar nome.sobrenome.com.br como nome de domínio (ex: fabio.favarim.com.br);
 	 * usar nome e ssh@Network1ng como nome e senha, respectivamente, sendo nome o seu  primeiro nome;
 	 * O tamanho da chave deve ser 1024.
+	 
 **Observação:** Todas as configurações nos roteadores devem ser feitas via CLI;
 
 ## Tarefa 6: Replicar a topologia em ambiente real
@@ -127,7 +134,6 @@ Os endereços IP das interfaces dos Hosts e Roteadores devem ser atribuídos da 
 ## Avaliação
 * As Tarefas 1 a 5 é individual, porém, poderá ser feita em grupo! 
 	 * No entanto, cada aluno deve fazer a sua atividade e ter total domínio do que foi feito.
-* A Tarefa 6 será feita em grupo;
 * Entrega 1 - Disponibilizar, no moodle link para repositorio git (gitlab ou github ou outro repositório), 
     * Disponibilizar no repositório arquivo  .md contendo:
     * RA e Nome do aluno;
@@ -143,26 +149,15 @@ Os endereços IP das interfaces dos Hosts e Roteadores devem ser atribuídos da 
 	 * Atualizar documentação (Entrega 1), corrigida, se for o caso;
 	 * arquivos contendo a configuração de cada dispositivo intermediário da topologia (roteadores e switches)
 	    * o nome de cada arquivo deve ser o mesmo nome do dispositivo definido na Tarefa 4, acrescido da extensão .txt (ex: r-pb-ff.txt)
-              
-* Entrega 3 – Topologia em Equipamentos Reais
-	 * Até o dia 09/06/2022 cada equipe deverá apresentar a topologia em equipamentos reais funcionando;
-	 * A equipe deve-se comunicar entre os membros para agendar horários para configurar os equipamentos, assim como deverão agendar junto a sala de apoio (V005) horários para usar o laboratório;
-	 * Como há apenas 12 roteadores, e na topologia são necessários 5 roteadores, no máximo será possível duas equipes trabalhar simultaneamente.
-	 * As equipes deverão agendar com o professor um horário para apresentar a topologia funcionando. 
-	 	 * Todos os membros da equipe deverão estar presentes;
-	 	 * O professor fará questionamentos durante a apresentação, caso o aluno não demonstre segurança, poderá receber nota zero em todo o trabalho.
-              
+            
           
 ## Critérios de Avaliação:
 * Entrega 1 – Documentação
-    * Tarefa 1: 0,5 ponto
-    * Tarefa 2: 0,5 ponto
-    * Tarefa 3: 1 ponto
+    * Tarefa 1: 1 ponto
+    * Tarefa 2: 1 ponto
+    * Tarefa 3: 2 ponto
 * Entrega 2 – Topologia Funcionando no Packet Tracer
-    * Tarefa 4: 4 pontos
+    * Tarefa 4: 5 pontos
     * Tarefa 5: 1 ponto
     * Obs: somente será avaliado se a Entrega 1 tiver sido feita;
- * Entrega 3 – Topologia Funcionando em Equipamentos Reais
-    * Tarefa 6: 3 pontos
-    * Obs: somente será avaliado se a Entrega 2 tiver sido feita;
 * Teste de autoria: não vale nota, porém, é critério para validar a autoria do trabalho. 
