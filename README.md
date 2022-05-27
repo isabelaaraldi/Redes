@@ -128,13 +128,12 @@ Os endereços IP das interfaces dos Hosts e Roteadores devem ser atribuídos da 
     * RA e Nome do aluno;
 	* Documentação correspondente as Tarefas 1, 2 e 3;
         * Outras informações que achar relevante;
-    * Data da entrega: até *31/05/2022* às 18h40min;
+    * Data da entrega: até *31/05/2022* às 18h40min - **Prorrogado para 02/06/2022 às 15h50min**;
         * Não será aceita entrega após o prazo;
-        * Obs: no dia 31/05/2022 às 18h40min será disponibilizado o gabarito para conferência e ajustes caso necessário;
+        * Obs: no dia 31/05/2022 (nova data - **02/06/2022**) às 18h40min será disponibilizado o gabarito para conferência e ajustes caso necessário;
 * Entrega 2 – Disponibilizar no repositório criado:
 	 * arquivo em formato .pkt (Packet Tracer), nomeado como trabalho2-topologia-NomeAluno.pkt com a topologia configurada e funcionando no Packet Tracer (Tarefas 4 e 5).
-	 	 * Data da entrega: até *02/06/2022* às 8h20min;
-	 	 * Obs: será aceita entrega após o prazo, porém com desconto de 25% por dia de atraso!  
+	 	 * Data da entrega: até *02/06/2022* às 8h20min (prorrogado para **07/06/2022**);
 	 * Atualizar documentação (Entrega 1), corrigida, se for o caso;
 	 * arquivos contendo a configuração de cada dispositivo intermediário da topologia (roteadores e switches)
 	    * o nome de cada arquivo deve ser o mesmo nome do dispositivo definido na Tarefa 4, acrescido da extensão .txt (ex: r-pb-ff.txt)
