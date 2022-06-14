@@ -153,12 +153,12 @@
 
 ## Arquivos de Configuração dos Dispositivos Intermediários (roteadores e switches)
 - [ ] ![Roteador Pato Branco](r-pb-IsabelaAraldi.txt)
-- [ ] ![Roteador Francisco Beltrão](r-fb-nnn.pkt)
-- [ ] ![Roteador Vitorino](r-vit-nnn.pkt)
-- [ ] ![Roteador Itapejara D'Oeste](r-ita-nnn.pkt)
-- [ ] ![Roteador Coronel Vivida](r-cv-nnn.pkt)
-- [ ] ![Switch Pato Branco](sw-pb-nnn.pkt)
-- [ ] ![Switch Francisco Beltrão](sw-fb-nnn.pkt)
-- [ ] ![Switch Coronel Vivida](sw-cv-nnn.pkt)
+- [ ] ![Roteador Francisco Beltrão](r-fb-IsabelaAraldi.txt)
+- [ ] ![Roteador Vitorino](r-vit-IsabelaAraldi.txt)
+- [ ] ![Roteador Itapejara D'Oeste](r-ita-IsabelaAraldi.txt)
+- [ ] ![Roteador Coronel Vivida](r-cv-IsabelaAraldi.txt)
+- [ ] ![Switch Pato Branco](sw-pb-IsabelaAraldi.txt)
+- [ ] ![Switch Francisco Beltrão](sw-fb-IsabelaAraldi.txt)
+- [ ] ![Switch Coronel Vivida](sw-cv-IsabelaAraldi.txt)
 
 
