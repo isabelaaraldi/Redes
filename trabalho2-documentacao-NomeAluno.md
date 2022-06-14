@@ -148,7 +148,7 @@
 |2001:DB8:ACAD:4BFF::3:0/112               | 2001:DB8:ACAD:4BFF::4:1/112        | SE0/0/0                   |
 
 ## Topologia - Packet Tracer
-- [ ] ![Trabalho2-Topologia-NomeAluno](trabalho2-topologia-NomeAluno.pkt)
+- [ ] ![Trabalho2-Topologia-IsabelaAraldi](Trabalho2_IsabelaAraldi.pkt)
 
 
 ## Arquivos de Configuração dos Dispositivos Intermediários (roteadores e switches)
