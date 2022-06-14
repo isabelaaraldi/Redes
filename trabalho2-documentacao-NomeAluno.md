@@ -152,7 +152,7 @@
 
 
 ## Arquivos de Configuração dos Dispositivos Intermediários (roteadores e switches)
-- [ ] ![Roteador Pato Branco](r-pb-nnn.pkt)
+- [ ] ![Roteador Pato Branco](r-pb-IsabelaAraldi.txt)
 - [ ] ![Roteador Francisco Beltrão](r-fb-nnn.pkt)
 - [ ] ![Roteador Vitorino](r-vit-nnn.pkt)
 - [ ] ![Roteador Itapejara D'Oeste](r-ita-nnn.pkt)
